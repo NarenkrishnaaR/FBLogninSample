@@ -16,6 +16,7 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+//    fbLoginButton()
   }
   
   override func didReceiveMemoryWarning() {
@@ -23,11 +24,11 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
   
-  //  func fbLoginButton(){
-  //    let fbLoginButton = LoginButton(readPermissions: [.publicProfile])
-  //    fbLoginButton.center = view.center
-  //    view.addSubview(fbLoginButton)
-  //  }
+    func fbLoginButton(){
+      let fbLoginButton = LoginButton(readPermissions: [.publicProfile])
+      fbLoginButton.center = view.center
+      view.addSubview(fbLoginButton)
+    }
   
   @IBAction func btnFbLoginFunc(_ sender: Any) {
     if NetworkReachable.isConnectedToNetwork() == true{
