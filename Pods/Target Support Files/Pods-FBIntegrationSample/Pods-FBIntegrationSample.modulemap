@@ -1,0 +1,6 @@
+framework module Pods_FBIntegrationSample {
+  umbrella header "Pods-FBIntegrationSample-umbrella.h"
+
+  export *
+  module * { export * }
+}
